@@ -5,9 +5,7 @@ using namespace std;
 void merge(int a[],int l,int m,int r){
     int n1 = m-l+1;
     int n2 = r-m;
-    int a1[n1];
-    int a2[n2];
-    int j=0;
+    int a1[n1],a2[n2],j=0;
     for(int i=l;i<=m;i++){
         a1[j]=a[i];
         j++;
@@ -57,7 +55,7 @@ int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	int v[] = {17,2,41,54,1};
-    mergeSort(v,0,4);
+    	mergeSort(v,0,4);
 	for(int i=0;i<=4;i++){
 	    cout<<v[i]<<"  ";
 	}
